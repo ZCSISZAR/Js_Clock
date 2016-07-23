@@ -57,6 +57,8 @@ if (minutes < 10) {
 console.log(hours+':'+minutes+':'+seconds);
 var clockFace=hours+':'+minutes+':'+seconds;
 document.getElementById('clock').innerHTML = clockFace;
+hours=45+hours;
+
 var hexColor='#'+hours+minutes+seconds;
 document.body.style.background=hexColor;
 
